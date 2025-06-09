@@ -1,5 +1,5 @@
 # PDB-structures-selection
-## Computational Methods for PDB Structure Selection
+## Computational Methods for PDB Structure Selection for the manuscritp "Targeting Dihydroorotate Dehydrogenase (DHODH) for Host-Directed Therapy: Discovery of a Novel Alkyne-Based Scaffold Inhibitor Effective Against SARS-CoV-2"
 
 The structural clustering and selection of protein models were performed using a custom Python pipeline. Atomic coordinates (x, y, z) were extracted from PDB files using Biopython, excluding heteroatoms, and standardized to a fixed maximum length (9,000 atoms) to ensure uniform feature vectors (27,000 dimensions). Feature normalization was applied via scikit-learn’s StandardScaler, followed by dimensionality reduction using UMAP (n_neighbors=15, min_dist=0.1, Euclidean metric) to generate 2D embeddings. Cluster analysis combined:
 
